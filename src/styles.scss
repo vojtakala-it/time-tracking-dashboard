@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "default-styles/reset";
+@import "default-styles/variables";
+@import "default-styles/fonts";
+
+* { box-sizing: border-box }
+
+body, main {
+	font-family: $primaryFont, $fallbackFont;
+	font-size: 18px;
+	font-weight: $normal;
+}

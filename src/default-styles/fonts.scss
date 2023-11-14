@@ -1,0 +1,27 @@
+@import "./variables";
+
+@supports not (font-variation-settings: normal) {
+	@font-face {
+		font-family: $primaryFont, $fallbackFont;
+		src: url('../assets/fonts/Rubik-VariableFont_wght.ttf');
+		font-weight: 300;
+	}
+	@font-face {
+		font-family: $primaryFont, $fallbackFont;
+		src: url('../assets/fonts/Rubik-VariableFont_wght.ttf');
+		font-weight: 400;
+	}
+	@font-face {
+		font-family: $primaryFont, $fallbackFont;
+		src: url('../assets/fonts/Rubik-VariableFont_wght.ttf');
+		font-weight: 500;
+	}
+}
+
+@supports (font-variation-settings: normal) {
+	@font-face {
+		font-family: $primaryFont, $fallbackFont;
+		src: url('../assets/fonts/Rubik-VariableFont_wght.ttf') format('trueType');
+		font-weight: 100 900;
+	}
+}
