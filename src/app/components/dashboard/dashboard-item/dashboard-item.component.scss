@@ -11,7 +11,11 @@
 
 		&:hover {
 			cursor: pointer;
-			background-color: hsl(240, 55%, 60%);
+			background-color: hsla(240, 60%, 50%, 0.6);
+
+			.flexbox-container-b p {
+				color: $snowWhite;
+			}
 		}
 
 		.flexbox-container-a {
@@ -31,7 +35,7 @@
 			p {
 				margin-top: 1vw;
 				font-size: $tiny;
-				color: $darkenedSmoothPurpleShade
+				color: $darkenedSmoothPurpleShade;
 			}
 		}
 	}
