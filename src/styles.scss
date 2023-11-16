@@ -2,7 +2,9 @@
 @import "default-styles/variables";
 @import "default-styles/fonts";
 
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
 
 body, main {
 	display: grid;

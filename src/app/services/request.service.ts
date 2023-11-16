@@ -20,9 +20,6 @@ export class RequestService {
 				map(items => {
 					return items;
 				}),
-				tap((items: DashboardItem[]) => {
-					this.dashboardItemsService.setItems(items);
-				})
 			);
 	};
 }

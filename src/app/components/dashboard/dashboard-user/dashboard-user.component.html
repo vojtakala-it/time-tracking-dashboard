@@ -1,11 +1,11 @@
 <div class="flexbox-container">
 	<div class="flexbox-child-container-a">
 		<img
-			class="profile-pic"
-			[ngSrc]="'assets/images/image-jeremy.png'"
 			[height]="profilePicDimension"
+			[ngSrc]="'assets/images/image-jeremy.png'"
 			[width]="profilePicDimension"
 			alt="Profile picture of Jeremy Robson"
+			class="profile-pic"
 		>
 		<div class="report-header">
 			<div class="report-text">Report for</div>
@@ -17,13 +17,13 @@
 	</div>
 	<div class="flexbox-child-container-b">
 		<h2
-			[ngClass]="{'active': option === 'daily'}"
-			(click)="onSetOption('daily')">Daily</h2>
+			(click)="onSetOption('daily')"
+			[ngClass]="{'active': option === 'daily'}">Daily</h2>
 		<h2
-			[ngClass]="{'active': option === 'weekly'}"
-			(click)="onSetOption('weekly')">Weekly</h2>
+			(click)="onSetOption('weekly')"
+			[ngClass]="{'active': option === 'weekly'}">Weekly</h2>
 		<h2
-			[ngClass]="{'active': option === 'monthly'}"
-			(click)="onSetOption('monthly')">Monthly</h2>
+			(click)="onSetOption('monthly')"
+			[ngClass]="{'active': option === 'monthly'}">Monthly</h2>
 	</div>
 </div>

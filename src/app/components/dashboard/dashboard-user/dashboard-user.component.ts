@@ -2,17 +2,11 @@ import {Component, ElementRef, HostListener, OnInit, Renderer2} from '@angular/c
 import {DashboardItemsService} from "../../../services/dashboard-items.service";
 
 @Component({
-  selector: 'app-dashboard-user',
-  templateUrl: './dashboard-user.component.html',
-  styleUrls: ['./dashboard-user.component.scss']
+	selector: 'app-dashboard-user',
+	templateUrl: './dashboard-user.component.html',
+	styleUrls: ['./dashboard-user.component.scss']
 })
 export class DashboardUserComponent implements OnInit {
-	@HostListener('window:resize', ['$event'])
-	@HostListener('window:load', ['$event'])
-	onResize(event: any) {
-		this.onScreenResize();
-	}
-
 	profilePicDimension = 234;
 	option = 'weekly';
 	shouldRenderBr = false;
@@ -20,6 +14,12 @@ export class DashboardUserComponent implements OnInit {
 	constructor(private dashboardItemsService: DashboardItemsService,
 				private renderer: Renderer2,
 				private el: ElementRef) {
+	}
+
+	@HostListener('window:resize', ['$event'])
+	@HostListener('window:load', ['$event'])
+	onResize(event: any) {
+		this.onScreenResize();
 	}
 
 	ngOnInit(): void {

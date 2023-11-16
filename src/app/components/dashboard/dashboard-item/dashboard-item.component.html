@@ -1,10 +1,10 @@
-<div class="dashboard-item-container" [ngStyle]="{'background-color': bgColor}">
-	<app-dashboard-icon class="some" [name]="iconName"></app-dashboard-icon>
+<div [ngStyle]="{'background-color': bgColor}" class="dashboard-item-container">
+	<app-dashboard-icon [name]="iconName" class="some"></app-dashboard-icon>
 
 	<div class="item-info-container">
 		<div class="flexbox-container-a">
 			<h3>{{ item.title }}</h3>
-			<app-dashboard-icon class="yo" [name]="'ellipsis'"></app-dashboard-icon>
+			<app-dashboard-icon [name]="'ellipsis'" class="yo"></app-dashboard-icon>
 		</div>
 		<div class="flexbox-container-b">
 			<div>{{ timeframe.current }}hrs</div>
