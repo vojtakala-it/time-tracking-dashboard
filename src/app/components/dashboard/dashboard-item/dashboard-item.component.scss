@@ -9,6 +9,11 @@
 		border-radius: 1.3vw;
 		padding: 2vw;
 
+		&:hover {
+			cursor: pointer;
+			background-color: hsl(240, 55%, 60%);
+		}
+
 		.flexbox-container-a {
 			display: flex;
 			justify-content: space-between;
@@ -30,6 +35,8 @@
 			}
 		}
 	}
+
+
 }
 
 @media only screen and (max-width: 850px) {
