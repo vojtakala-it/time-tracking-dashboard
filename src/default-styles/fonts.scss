@@ -20,7 +20,7 @@
 
 @supports (font-variation-settings: normal) {
 	@font-face {
-		font-family: $primaryFont, $fallbackFont;
+		font-family: 'Rubik', $fallbackFont;
 		src: url('../assets/fonts/Rubik-VariableFont_wght.ttf') format('trueType');
 		font-weight: 100 900;
 	}

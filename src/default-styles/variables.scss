@@ -2,8 +2,25 @@
 $primaryFont: 'Rubik';
 $fallbackFont: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 
+	//// font-sizes
+		$extraLarge: 3rem;
+		$large: 2.5rem;
+		$mediumXl: 1.9rem;
+		$medium: 1.2rem;
+		$tiny: 1rem;
+
 	//// font-weights
 		$normal: 300;
 		$bold: 400;
 		$heavy: 500;
 
+// COLORS
+	//// BG colors
+		$deepNavy: hsl(223, 90%, 7%);
+		$smoothPurple: hsl(240, 65%, 60%);
+		$darkenedSmoothPurple: hsl(240, 45%, 20%);
+
+	//// All-purpose colors
+		$snowWhite: hsl(190, 20%, 90%);
+		$smoothPurpleShade: hsl(240, 2%, 70%);
+		$darkenedSmoothPurpleShade: hsl(240, 45%, 60%);
