@@ -51,6 +51,10 @@
 			border-radius: inherit;
 			padding: 4vw 4vw 3vw;
 
+			&:hover {
+				background-color: hsl(240, 30%, 50%);
+			}
+
 			.flexbox-container-b {
 				display: flex;
 				flex-direction: row;
