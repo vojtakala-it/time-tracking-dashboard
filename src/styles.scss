@@ -2,10 +2,33 @@
 @import "default-styles/variables";
 @import "default-styles/fonts";
 
-* { box-sizing: border-box }
+* { box-sizing: border-box; }
 
 body, main {
-	font-family: $primaryFont, $fallbackFont;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-family: Rubik, $fallbackFont;
 	font-size: 18px;
+	color: hsl(100, 30%, 95%);
 	font-weight: $normal;
+	background-color: $deepNavy;
+}
+
+h1 {
+	font-size: $large;
+}
+
+h2 {
+	font-size: $medium;
+	color: $darkenedSmoothPurpleShade;
+
+	&:hover {
+		cursor: pointer;
+		color: $snowWhite;
+	}
+}
+
+h3 {
+	font-size: $medium;
 }

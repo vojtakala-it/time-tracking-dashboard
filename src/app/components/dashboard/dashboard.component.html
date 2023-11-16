@@ -1,0 +1,8 @@
+<div class="grid-container">
+	<app-dashboard-user class="user"></app-dashboard-user>
+	<app-dashboard-item
+		*ngFor="let item of dashboardItems"
+		class="item"
+		[item]="item">
+	</app-dashboard-item>
+</div>

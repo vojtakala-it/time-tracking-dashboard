@@ -1,0 +1,89 @@
+@import "../../../../default-styles/variables";
+
+.flexbox-container {
+	background-color: $darkenedSmoothPurple;
+	border-radius: 1.3vw;
+	height: 100%;
+
+	.flexbox-child-container {
+		display: flex;
+		flex-direction: column;
+		padding: 2vw 0 1.8vw 2.5vw;
+
+		.profile-pic {
+			max-width: 30%;
+			height: auto;
+			border: 0.3vh solid $snowWhite;
+			border-radius: 50%;
+		}
+
+		.report-text {
+			font-size: $tiny;
+			font-weight: $bold;
+			color: $smoothPurpleShade;
+			margin: 2.5vw 0 1vw 0;
+		}
+	}
+
+	.flexbox-child-container-a {
+		@extend .flexbox-child-container;
+		height: 67%;
+		background-color: $smoothPurple;
+		border-radius: inherit;
+	}
+
+	.flexbox-child-container-b {
+		@extend .flexbox-child-container;
+		gap: 1.7vw;
+	}
+}
+
+.active {
+	color: $snowWhite;
+}
+
+
+@media only screen and (max-width: 850px) {
+	.flexbox-container {
+		border-radius: 2.5vw;
+
+		.flexbox-child-container {
+			flex-direction: row;
+			align-items: center;
+			border-radius: inherit;
+			padding: 0;
+
+			.profile-pic {
+				border: 0.6vh solid $snowWhite;
+				max-width: 20%;
+			}
+
+			.report-header {
+				display: inherit;
+				flex-direction: column;
+				margin-left: 3vw;
+
+				h1 {
+					font-size: 1.7rem;
+					white-space: nowrap;
+				}
+
+				.report-text {
+					margin: 0 0 1vw 0;
+				}
+			}
+		}
+
+		.flexbox-child-container-a {
+			@extend .flexbox-child-container;
+			padding: 6vw 0 6vw 3.5vw;
+		}
+
+		.flexbox-child-container-b {
+			@extend .flexbox-child-container;
+			justify-content: space-between;
+			padding: 1vw 5vw;
+			height:  34%;
+		}
+	}
+}

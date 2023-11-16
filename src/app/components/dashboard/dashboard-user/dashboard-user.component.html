@@ -1,0 +1,29 @@
+<div class="flexbox-container">
+	<div class="flexbox-child-container-a">
+		<img
+			class="profile-pic"
+			[ngSrc]="'assets/images/image-jeremy.png'"
+			[height]="profilePicDimension"
+			[width]="profilePicDimension"
+			alt="Profile picture of Jeremy Robson"
+		>
+		<div class="report-header">
+			<div class="report-text">Report for</div>
+			<h1 *ngIf="shouldRenderBr; else clearHeading">Jeremy <br> Robson</h1>
+			<ng-template #clearHeading>
+				<h1>Jeremy Robson</h1>
+			</ng-template>
+		</div>
+	</div>
+	<div class="flexbox-child-container-b">
+		<h2
+			[ngClass]="{'active': option === 'daily'}"
+			(click)="onSetOption('daily')">Daily</h2>
+		<h2
+			[ngClass]="{'active': option === 'weekly'}"
+			(click)="onSetOption('weekly')">Weekly</h2>
+		<h2
+			[ngClass]="{'active': option === 'monthly'}"
+			(click)="onSetOption('monthly')">Monthly</h2>
+	</div>
+</div>

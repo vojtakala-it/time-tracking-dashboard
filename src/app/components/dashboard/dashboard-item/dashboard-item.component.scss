@@ -1,0 +1,64 @@
+@import "../../../../default-styles/variables";
+
+
+.dashboard-item-container {
+	border-radius: 1.3vw;
+
+	.item-info-container {
+		background-color: $darkenedSmoothPurple;
+		border-radius: 1.3vw;
+		padding: 2vw;
+
+		.flexbox-container-a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.flexbox-container-b {
+			margin-top: 3vw;
+
+			div {
+				font-size: $extraLarge;
+				color: $snowWhite;
+			}
+
+			p {
+				margin-top: 1vw;
+				font-size: $tiny;
+				color: $darkenedSmoothPurpleShade
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.dashboard-item-container {
+		border-radius: 2.5vw;
+
+		.item-info-container {
+			border-radius: inherit;
+			padding: 4vw 4vw 3vw;
+
+			.flexbox-container-b {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 1.6vw;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.dashboard-item-container {
+		.item-info-container {
+			.flexbox-container-b {
+				div {
+					font-size: $mediumXl;
+				}
+			}
+		}
+	}
+}
